@@ -1,0 +1,19 @@
+cabin_1 = "occupied"
+cabin_2 = "non occupied"
+cabin_3 = "occupied"
+if cabin_1 == ("occupied"):
+ print ("cabin 1 doesnt need cleaning")
+else:
+  print("cabin 1 needs cleaning")
+if cabin_2 == ("occupied"):
+   print("cabin 2 needs cleaning")
+else:
+    print(" cabin 2 doenst need cleaning")
+if cabin_3 == ("occupied"):
+     print("cabin 3 needs cleaning")
+else:
+      print("cabin 3 doesnt need cleaning")
+if cabin_1 == "occupied" and cabin_2 == "occupied" and cabin_3 == "occupied":
+       print("all cabins need cleaning")
+elif cabin_1 == "non occupied" and cabin_2 == "non occupied" and cabin_3 == "non occupied":
+        print("no cabins need cleaning")
