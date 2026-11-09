@@ -1,0 +1,44 @@
+veiw = {"bortle 9": ["sirius", "saturn"], "bortle 8": ["alnitak", "alniam", "mintaka"], "bortle 7": ["orion nebula", "carina nebula", "omega centauri"], "bortle 6": ["lagoon nebula", "omega nebula", "dumbell nebula"], "bortle 5": ["andromeda galaxy", "bodes and cigar galaxy", "milky way core"], "bortle 4": ["miky way", "centaurus A", "needle galaxy"], "bortle 3": ["milky way dust lanes", "southern pinwheel galaxy", "markarians chain"], "bortle 2": ["fornax cluster", "grus quartet"], "bortle 1": ["backround galaxies", "airglow", "entire milky way"]}
+user_bortle = input("what is your bortle ?")
+if user_bortle == "9":
+ print(veiw["bortle 9"])
+elif user_bortle == "8":
+  print(veiw["bortle 8"])
+elif user_bortle == "7":
+   print(veiw["bortle 7"])
+elif user_bortle == "6":
+    print(veiw["bortle 6"])
+elif user_bortle == "5":
+     print(veiw["bortle 5"])
+elif user_bortle == "4":
+      print(veiw["bortle 4"])
+elif user_bortle == "3":
+       print(veiw["bortle 3"])
+elif user_bortle == "2":
+        print(veiw["bortle 2"])
+elif user_bortle == "1":
+         print(veiw["bortle 1"])
+else:
+          print("thats not a bortle, the bortle scale is 9-1 ")
+moon = input("what is your moon right now at?")
+if user_bortle in ["9", "8", "7", "6", "5", "4"] and moon == "full":
+ print("its a bortle 9 due to a full moon")
+elif user_bortle in ["9", "8", "7", "5", "4"] and moon == "new":
+  print("its still a " + user_bortle)
+
+if moon == "full" and user_bortle == "3":
+ print("its a borlte 8")
+elif moon == "new" and user_bortle == "3":
+  print("its a clean bortle 3 still")
+elif moon == "full" and user_bortle == "2":
+   print("its a bortle 7 now")
+elif moon == "new" and user_bortle == "2":
+    print("its a clean bortle 2")
+elif moon == "full" and user_bortle == "1":
+     print("its a brotle 6")
+elif moon == "new" and user_bortle == "1":
+      print("its a clean bortle 1")
+elif moon not in  ["full", "new"]:
+       print("that moon phase either doenst exist or isnt in this code because i was lazy")
+
+
